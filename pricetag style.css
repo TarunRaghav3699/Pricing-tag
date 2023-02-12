@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    padding: lrem;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    margin: 1rem;
+    width: 240px;
+    height: 400px;
+    cursor: pointer;
+    transition: 0.1s;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.content {
+    color: #f8f1f1;
+    padding: 25px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.content h4 {
+    margin: 10px 0;
+}
+
+.price {
+    color: #fff;
+    font-size: 28px;
+}
+
+.bottom-card {
+    width: 100%;
+    height: 280px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 1px 19px rgb(0 0 0 / 50%);
+}
+
+.bg-orange {
+    background-color: #e65b00;
+}
+
+.bg-purple {
+    background-color: rgb(134, 9, 172);
+}
+
+.bg-pink {
+    background-color: rgb(220, 4, 112);
+}
+
+.bottom-card ul {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+ul li {
+    color: #6a5454;
+    list-style: none;
+    line-height: 26px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card:hover .bottom-card {
+    box-shadow: 0 0px 11px rgb(0 0 0 / 50%);
+}
+
+.card:hover ul li {
+    color: #000;
+}
+
+.btn {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    bottom: 30px;
+}
